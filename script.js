@@ -3,7 +3,7 @@
 $(function () {
     console.log('reading');
 
-    var myVal = $('#current').offset().top;
+    var myVal = $('#current').offset().top - 100;
 
     moveSchedule();
 
@@ -20,7 +20,7 @@ $(function () {
 
         console.log("moving nav down");
         $('nav').css('position','absolute').animate({
-            top: myVal-150
+            top: myVal+100
         }, 500);
         console.log('nav is : ' + $('nav').top);
 
